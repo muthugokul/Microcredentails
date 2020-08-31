@@ -15,12 +15,12 @@ namespace Microcredentials.Test
     public class CustomerControllerTest
     {
         private readonly Mock<IService<Customer>> mockCustomerService;
-        private readonly CustomerController controller;
+        private readonly CustomersController controller;
 
         public CustomerControllerTest()
         {
             mockCustomerService = new Mock<IService<Customer>>();
-            controller = new CustomerController(mockCustomerService.Object);
+            controller = new CustomersController(mockCustomerService.Object);
         }
 
         #region GetAll
